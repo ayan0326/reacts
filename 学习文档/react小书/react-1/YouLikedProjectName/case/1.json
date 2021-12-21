@@ -1,0 +1,80 @@
+{
+	"ret": true,
+    "data": {
+	"categories": [{
+			"price": "1000",
+			"name": "小米手机",
+			"imgUrl": "http://localhost:8081/image/lanlan.jpeg"
+		},
+		{
+			"price": "2000",
+			"name": "华为手机",
+			"imgUrl": "http://localhost:8081/image/lanlan.jpeg"
+		},
+		{
+			"price": "3000",
+			"name": "锤子手机",
+			"imgUrl": "http://localhost:8081/image/lanlan.jpeg"
+		},
+		{
+			"price": "4000",
+			"name": "一加手机",
+			"imgUrl": "http://localhost:8081/image/lanlan.jpeg"
+		},
+		{
+			"price": "5000",
+			"name": "魅族手机",
+			"imgUrl": "http://localhost:8081/image/lanlan.jpeg"
+		},
+		{
+			"price": "6000",
+			"name": "小米手机",
+			"imgUrl": "http://localhost:8081/image/lanlan.jpeg"
+		},
+		{
+			"price": "7000",
+			"name": "华为手机",
+			"imgUrl": "http://localhost:8081/image/lanlan.jpeg"
+		},
+		{
+			"price": "8000",
+			"name": "锤子手机",
+			"imgUrl": "http://localhost:8081/image/lanlan.jpeg"
+		},
+		{
+			"price": "9899",
+			"name": "一加手机",
+			"imgUrl": "http://localhost:8081/image/lanlan.jpeg"
+		},
+		{
+			"price": "10099",
+			"name": "魅族手机",
+			"imgUrl": "http://localhost:8081/image/lanlan.jpeg"
+		},
+		{
+			"price": "20000",
+			"name": "小米手机",
+			"imgUrl": "http://localhost:8081/image/lanlan.jpeg"
+		},
+		{
+			"price": "30000",
+			"name": "华为手机",
+			"imgUrl": "http://localhost:8081/image/lanlan.jpeg"
+		},
+		{
+			"price": "40000",
+			"name": "锤子手机",
+			"imgUrl": "http://localhost:8081/image/lanlan.jpeg"
+		},
+		{
+			"price": "50899",
+			"name": "一加手机",
+			"imgUrl": "http://localhost:8081/image/lanlan.jpeg"
+		},
+		{
+			"price": "60099",
+			"name": "魅族手机",
+			"imgUrl": "http://localhost:8081/image/lanlan.jpeg"
+		}
+	]}
+}

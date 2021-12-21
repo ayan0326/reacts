@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../ifont/iconfont.css"/>
+		<title></title>
+		<style type="text/css">
+			html,body,.box{
+				width: 100%;height: 100%;
+			}
+			.header{
+				height: 0.9rem;
+				width: 100%;
+				background: #ff5e32;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				position: fixed;
+				top: 0;
+				left: 0;
+			}
+			.top{
+				width: 6rem;
+				height: 0.6rem;
+				background: white;
+				border-radius:0.3rem ;
+			}
+			.top a{
+				display: flex;
+				width: 100%;
+				height: 100%;
+				justify-content: center;
+				align-items: center;
+				color: #c1c1c1;	
+			}
+			.top a .iconfont{
+				font-size: 0.4rem;
+			}
+			.header .a2{
+				display: flex;
+				width: 0.6rem;
+				height: 0.6rem;
+				flex-direction: column;
+				font-size: 0.2rem;
+				color: black;
+			}
+			.header .a2 .iconfont{
+				font-size:0.4rem ;
+			}
+			/*  */
+			.content{
+				padding-top: 0.9rem;
+				
+			}
+			.contop{
+				height: 0.7rem;
+				background: skyblue;
+				position: relative;
+			}
+			.contop ul{
+				height: 0.7rem;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+			}
+			.contop ul li a{
+				color: black;
+			}
+			.contop ul li:first-child a{
+				color: #FF5E32;
+			}
+			.contop ul li:last-child a{
+				color: #FF5E32;
+			}
+			.contop ul li:last-child{
+				width: 0.74rem;
+				height: 0.7rem;
+				line-height: 0.7rem;
+				background: white;
+				position: fixed;
+				top: 0.9rem;
+				right:0 ;
+				text-align: center;
+				
+			}
+			.conmid{
+				height: 3.82rem;
+			
+				border-bottom: 10px solid #f6f6f6;
+			}
+			.conmidlt{
+				width: 2.8rem;
+				
+				height: 3.82rem;
+				float: left;
+				border-right: 1px solid #f6f6f6;
+				box-sizing: border-box;
+				padding-top: 0.3rem;
+				padding-left: 0.28rem;
+			}
+			.conmidlt p:first-child{
+				width: 1.86rem;
+				height: 0.4rem;
+				font-size: 0.32rem;
+				color: #FF5E32;
+				margin-bottom: 0.18rem;
+			}
+			.conmidlt p:first-child span{
+				display: inline-block;
+				width: 0.5rem;
+				height: 0.5rem;
+				border-radius: 50%;
+				background: #ff2221;
+			}
+			.conmidlt p:last-of-type{
+				width: 2rem;
+				height: 0.3rem;
+				line-height: 0.3rem;
+				font-size: 0.2rem;
+				color: #FFFFFF;
+				background: #FF2221;
+				margin-bottom: 0.18rem;
+				border-radius: 0.15rem;
+				text-align: center;
+				margin-bottom: 0.5rem;
+			}
+			.conmidrt{
+				width: 4.7rem;
+				
+				height: 3.82rem;
+				float: right;
+				text-align: center;
+			}
+			.conmidrt_top{
+				height: 2.12rem;
+				
+				border-bottom: 1px solid #F6F6F6;
+				padding-left: 0.2rem;
+			}
+			.conmidrt_top div{
+				float: left;
+			}
+			.conmidrt_top p:first-of-type{
+				width: 2rem;
+				height: 0.32rem;
+				font-size: 0.32rem;
+				margin-bottom: 0.1rem;
+				color: #FF5E32;
+			}
+			.conmidrt_top p:nth-of-type(2){
+				width: 1.38rem;
+				height: 0.4rem;
+				font-size: 0.24rem;	
+				line-height: 0.4rem;
+				color: gray;
+				margin-bottom: 0.1rem;
+			}
+			.conmidrt_top p:last-of-type{
+				width: 2rem;
+				height: 0.3rem;
+				line-height: 0.3rem;
+				font-size: 0.2rem;
+				color: #FFFFFF;
+				background: #FF2221;
+				margin-bottom: 0.18rem;
+				border-radius: 0.15rem;
+				text-align: center;
+				margin-bottom: 0.5rem;
+			}
+			.conmidrt_top img{
+				float: right;
+				margin-top: 0.2rem;
+				margin-right: 0.1rem;
+			}
+			.con_fot1{
+				width: 2.3rem;
+				height: 1.68rem;
+				float: left;
+				border-right: 1px solid #F6F6F6;	
+			}
+			.con_fot1 img{
+				margin-left: 0.9rem;
+				margin-top: 0.3rem;
+			}
+			.confot{
+				height: 4rem;
+				
+				padding-top: 0.24rem;
+			}
+			.confot p:first-child{
+				width: 2.56rem;
+				height: 0.5rem;
+				background:#ff732e;
+				color: white;
+				text-align: center;
+				line-height: 0.5rem;
+				font-size: 0.32rem;
+				border-radius:0 0.25rem 0.25rem 0 ;
+				margin-bottom: 0.24rem;
+			}
+			.confot div{
+				height: 2.8rem;
+				
+			}
+			.confot div img{
+				margin-right: 0.24rem;
+				float: left;
+			}
+			.confot div p:first-of-type{
+				height: 0.34rem;
+				margin-top: 0.24rem;
+				float: left;
+				margin-bottom: 0.8rem;
+				font-size: 0.26rem;
+			}
+			.confot div p:nth-of-type(2){
+				width: 4.18rem;
+				height: 0.4rem;
+				line-height: 0.4rem;
+				display: flex;
+				justify-content: space-between;
+				font-size: 0.2rem;
+				color: gray;
+			}
+			
+			.confot div p:nth-of-type(3){
+				width: 4.18rem;
+				height: 0.4rem;
+				line-height: 0.4rem;
+				display: flex;
+				justify-content: space-between;
+				
+			}
+			/*  */
+			.footer{
+				height: 0.9rem;
+				width: 100%;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				background:white;
+			}
+			.footer ul{
+				height: 100%;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+			}
+			.footer ul a{
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				color:gray;
+				font-size: 0.24rem;
+			}
+			.footer li i{
+				font-size: 0.4rem;
+			}
+			
+			.active{
+				color: #008000;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="header">
+				<div class="top">
+					<a href=""> 
+						<i class="iconfont icon-fangdajing"></i>
+						内衣内裤套餐
+					</a>
+					
+				</div>
+				<a href="" class="a2">
+					<i class="iconfont icon-fangdajing"></i>
+					购物车
+				</a>
+			</div>
+			<div class="content">
+				<div class="contop">
+					<ul>
+						<li><a href="">精选</a></li>
+						<li><a href="">精选</a></li>
+						<li><a href="">精选</a></li>
+						<li><a href="">精选</a></li>
+						<li><a href="">精选</a></li>
+						<li><a href="">精选</a></li>
+						<li><a href=""><i class="iconfont icon-menu-two"></i></a></li>
+					</ul>
+				</div>
+				<div class="banner">
+					<img src="../img/首页banner_02.jpg" alt="">
+				</div>
+				<div class="conmid">
+					<div class="conmidlt">
+						<p>
+							9.9包邮
+							<span>新</span>
+						</p>
+						<p>捡漏，史上最低价！</p>
+						<img src="../img/con1_05.jpg" alt="">
+					</div>
+					<div class="conmidrt">
+						<div class="conmidrt_top">
+							<div class="div">
+								<p>
+									9.9包邮
+									<span>新</span>
+								</p>
+								<p>每日相约好</p>
+								<p>捡漏，史上最低价！</p>
+							</div>
+							<img src="../img/con2_05.jpg" alt="">
+						</div>
+						<div class="conmidrt_footer">
+							<div class="con_fot1">
+								<p>哈哈哈</p>
+								<img src="../img/con3_12.jpg" alt="">
+							</div>
+							<div class="con_fot1">
+								<p>哈哈哈</p>
+								<img src="../img/con3_12.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				
+					
+				</div>
+			</div>
+			<div class="confot">
+				
+					<p>hahahaha</p>
+			
+				<div>
+					<img src="../img/con4_16.jpg" alt="">
+					<p>哈哈哈哈哈哈哈</p>
+					<p>  <span>hahah</span><span>哈哈哈</span></p>
+					<p> <span>hahah</span> <span>qqqq</span></p>
+				</div>
+			</div>
+			<div class="footer">
+				<ul>
+					<li ><a href=""  ><i class="iconfont icon-31zhongchouxiangqingxiaofangzi"></i>首页</a></li>
+					<li><a href=""><i class="iconfont icon-fangdajing"> </i>分类</a></li>
+					<li><a href=""><i class="iconfont icon-xiangji"></i>收藏</a></li>
+					<li><a href=""><i class="iconfont icon-wode"></i>我的</a></li>
+					
+				</ul>
+			</div>
+		</div>
+		
+		<script src="../js/flexible.js" type="text/javascript" charset="utf-8"></script>
+		
+		
+		
+	</body>
+</html>

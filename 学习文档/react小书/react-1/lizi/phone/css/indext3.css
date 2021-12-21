@@ -1,0 +1,244 @@
+@charset "utf-8";
+.header{
+	height: 1rem;
+	width: 100%;
+	background: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 0.24rem solid #eeeeee;
+}
+
+.header h3{
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	font-size: 0.28rem;
+	color: #888888;
+}
+.header div i{
+	display: block;
+	width:0.22rem;
+	height: 0.4rem;
+	background:url(../img/guc_03.jpg) no-repeat center/0.22rem ;
+	float: left;
+	margin-left: 0.3rem;
+	margin-top: 0.3rem;
+}
+/*  */
+.content{
+	padding-top: 1.24rem;
+	
+}
+.contopheader{
+	height: 0.96rem;
+	/* background: yellowgreen; */
+}
+.contopheader .lsit{
+	height: 0.96rem;
+	/* background: red; */
+
+	
+}
+.contopheader .lsit li{
+	float: left;
+	
+}
+.contopheader .lsit li a{
+	font-size: 0.22rem;
+	color: black;
+}
+.contopheader .lsit li:first-of-type {
+	height: 0.96rem;
+	width: 0.86rem;
+	margin-left: 0.2rem;
+	margin-top: 0.2rem;
+}
+.contopheader .lsit li:first-of-type a img{
+	width:0.4rem ;
+	height: 0.4rem;
+}
+.contopheader .lsit li:nth-of-type(2){
+	width: 0.56rem;
+	margin-top: 0.24rem;
+}
+.contopheader .lsit li:nth-of-type(2) a img{
+	width: 0.36rem;
+	height: 0.29rem;
+}
+.contopheader .lsit li:nth-of-type(3){
+	width: 1.86rem;
+	margin-top: 0.24rem;
+}
+.contopheader .lsit li:nth-of-type(4){
+	float: right;
+	margin-top: 0.24rem;
+	border-left: 1px solid black;
+	margin-right: 0.26rem;
+}
+.contopheader .lsit li:nth-of-type(5){
+	float: right;
+	margin-top: 0.24rem;
+	margin-right: 0.26rem;
+	
+
+}
+.contopimg dl{
+	height: 2.95rem;
+	position: relative;
+	border-bottom: 0.24rem solid #eeeeee;
+}
+.contop dt{
+
+	
+}
+.contop .img1{
+	width: 0.4rem;
+	height: 0.4rem;
+	position: absolute;
+	float: left;
+	margin-left: 0.24rem;
+	margin-top: 0.66rem;
+}
+.contop .img2{
+	width: 1.95rem;
+	height: 1.93rem;
+	margin-right: 0.24rem;
+	float: left;
+}
+.contop dd p:first-of-type{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	font-size: 0.28rem;
+
+	margin-bottom: 0.4rem;
+}
+.contop dd p:nth-of-type(2){
+	display: flex;
+}
+.contop dd p:nth-of-type(2) img{
+	width: 0.24rem;
+	height: 0.26rem;
+}
+.contop dd p:nth-of-type(3){
+	background:#f5f5f5;
+	width: 4.14rem;
+	height: 0.76rem;
+	float: left;
+	color: #d6d6d6;
+}
+.contop dd p:nth-of-type(4){
+	float: left;
+	position: relative;
+	width: 2rem;
+}
+.contop dd p:nth-of-type(4) span:first-child{
+	width: 0.78rem;
+	height: 0.22rem;
+	color: #ff6600;
+}
+ .contop dd p:nth-of-type(4) span:last-child{
+	 width: 3rem;
+	 color: green;
+	margin-left: 0.6rem;
+ }
+
+/*  */
+.conmidimg{
+
+	padding-top: 0.2rem;
+	padding-left: 0.2rem;
+	height: 2.76rem;
+}
+.conmidimg dt{
+
+}
+ .conmidimg dt img:first-child{
+	 width: 0.4rem;
+	 height: 0.4rem;
+	 margin-right: 0.2rem;
+	 float: left;
+ }
+ .conmidimg dt img:last-child{
+	 width: 1.95rem;
+	 height: 1.93rem;
+	 float: left;
+	 margin-right: 0.2rem;
+ }
+ .conmidimg dd p:first-of-type{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	font-size: 0.28rem;
+	margin-bottom: 0.4rem;
+ }
+ .conmidimg dd p:nth-of-type(2){
+	 float: left;
+	 display: flex;
+ }
+ .conmidimg dd p:nth-of-type(2) img{
+	 width: 0.24rem;
+	 height: 0.26rem;
+ }
+ .conmidimg dd p:nth-of-type(3){
+ 	background:#f5f5f5;
+ 	width: 4.14rem;
+ 	height: 0.76rem;
+ 	float: left;
+ 	color: #d6d6d6;
+	margin-top: 0.1rem;
+	 }
+.conmidimg dd p:nth-of-type(4){
+	float: left;
+	margin-left: 2.7rem;
+}
+.conmidimg dd p:nth-of-type(4) span:first-of-type{
+	color: #FF6600;
+	margin-right: 2rem;
+}
+/*  */
+.footer{
+	height: 1rem;
+	width: 100%;
+	background: white;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.footer ul{
+
+}
+.footer ul li{
+	float: left;
+
+}
+.footer li:first-of-type{
+	width: 0.7rem;
+	height: 1rem;
+}
+.footer li:first-of-type img{
+	width: 0.4rem;
+	height: 0.4rem;
+	margin-top: 0.24rem;
+	margin-left: 0.24rem;
+}
+.footer li:nth-of-type(2){
+	width: 2.7rem;
+	height: 1rem;
+	line-height: 1rem;
+	text-indent: 0.2rem;
+}
+.footer li:nth-of-type(3){
+	width: 2.1rem;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: right;	
+}
+.footer li:nth-of-type(4){
+	width: 1.92rem;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	background: #ff5500;
+	color: white;
+	float: right;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class='wrapper'>
+        <button class='like-btn'>
+            <span class='like-text'>点赞</span>
+            <span>?</span>
+        </button>
+    </div>
+
+
+    <script>
+        // const button = document.querySelector('.like-btn')
+        // const buttonText = button.querySelector('.like-text')
+        // let isLiked = false;
+        // button.addEventListener('click', function () {
+        //     isLiked = !isLiked
+        //     if (isLiked) {
+        //         buttonText.innerHTML = '取消'
+        //     } else {
+        //         buttonText.innerHTML = '点赞'
+        //     }
+        // }, false)
+
+        const wrapper = document.querySelector('.wrapper')
+        const LikeButton1 = new LikeButton();
+        wrapper.innerHTML = LikeButton1.render();
+
+        const LikeButton2 = new LikeButton();
+        wrapper.innerHTML = LikeButton2.render();
+        // 没添加点击事件，点击没效果
+
+        //
+        const createDOMFromString = (domString) => {
+            const div = document.createElement('div')
+            console.log(div);
+            div.innerHTML = domString;
+            return div;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>蜂灯科技</title>
+    <meta name="author" content="Matthew Howell" />
+    <meta name="description" content="fullPage continuous scrolling demo." />
+    <meta name="keywords" content="fullpage,jquery,demo,scroll,loop,continuous" />
+    <meta name="Resource-type" content="Document" />
+
+    <link href="https://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="./css/guanwang.css" />
+    <link rel="stylesheet" href="./css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
+    <Link rel="stylesheet" href="./css/animate.css" />
+
+    <!-- IE浏览器兼容写法 -->
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 菜单栏对应每一个展示板块 -->
+    <div id="header">
+        <div class="logo">logo</div>
+        <ul class="menus">
+            <li data-menuanchor="homePage" class="active"><a href="#homePage">首页</a></li>
+            <li data-menuanchor="servePage"><a href="#servePage">服务</a></li>
+            <li data-menuanchor="productPage"><a href="#productPage">产品</a></li>
+            <li data-menuanchor="dynamicPage"><a href="#dynamicPage">动态</a></li>
+            <li data-menuanchor="aboutPage"><a href="#aboutPage">关于</a></li>
+            <li data-menuanchor="contactPage"><a href="#contactPage">联系</a></li>
+            <li data-menuanchor=" clientPage"><a href="#clientPage">客户</a></li>
+        </ul>
+        <div class="language">
+            <Select className="select" defaultValue="">
+                <Option value="">语言</Option>
+                <Option value="1">中文</Option>
+                <Option value="2">英文</Option>
+                <Option value="4">日文</Option>
+            </Select>
+        </div>
+    </div>
+
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <div id="content">
+                <h1 class="animate fadeInUp">专 注 于 研 发 区 块 链</h1>
+                <h2 class="delayone animate fadeInUp">为 存 储 而 生</h2>
+                <h4 class="delaytwo animate fadeInUp">目 前 可 提 供 服 务</h4>
+                <div class="delaytwo animate fadeInUp">
+                    <span class="area-box">矿区</span>
+                    <span class="area-box">钱包</span>
+                    <span class="area-box">详情</span>
+                    <span class="area-box">购物</span>
+                </div>
+
+                <div class="container">
+                    <div class="boxA"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section1">
+            <p class="title">涉猎区域</p>
+            <ul class="content-box">
+                <li class="msg-content">
+                    <span class="iconfont icon-zhuye"></span>
+                    <!-- 页面跳转，跳转到新的页面，把js直接写在html中 -->
+                    <a onclick="window.location.href='./message.html'">
+                        <p class="msg-title">区块链监控</p>
+                        <p>超越渗透测试的私钥安全、业务安全等全方位的黑盒加灰盒安全审计</p>
+                    </a>
+                </li>
+                <li class="msg-content">
+                    <span class="iconfont icon-fangan"></span>
+                    <a onclick="window.location.href='./message.html'">
+                        <p class="msg-title">区块链监控</p>
+                        <p>超越渗透测试的私钥安全、业务安全等全方位的黑盒加灰盒安全审计</p>
+                    </a>
+                </li>
+                <li class="msg-content">
+                    <span class="iconfont icon-anquan"></span>
+                    <a onclick="window.location.href='./message.html'">
+                        <p class="msg-title">区块链监控</p>
+                        <p>超越渗透测试的私钥安全、业务安全等全方位的黑盒加灰盒安全审计</p>
+                    </a>
+                </li>
+                <li class="msg-content">
+                    <span class="iconfont icon-dianhua01"></span>
+                    <a onclick="window.location.href='./message.html'">
+                        <p class="msg-title">区块链监控</p>
+                        <p>超越渗透测试的私钥安全、业务安全等全方位的黑盒加灰盒安全审计</p>
+                    </a>
+                </li>
+                <li class="msg-content">
+                    <span class="iconfont icon-anquan"></span>
+                    <a onclick="window.location.href='./message.html'">
+                        <p class="msg-title">区块链监控</p>
+                        <p>超越渗透测试的私钥安全、业务安全等全方位的黑盒加灰盒安全审计</p>
+                    </a>
+                </li>
+                <li class="msg-content">
+                    <span class="iconfont icon-dianhua01"></span>
+                    <a onclick="window.location.href='./message.html'">
+                        <p class="msg-title">区块链监控</p>
+                        <p>超越渗透测试的私钥安全、业务安全等全方位的黑盒加灰盒安全审计</p>
+                    </a>
+                </li>
+                <li class="msg-content">
+                    <span class="iconfont icon-zhuye"></span>
+                    <a onclick="window.location.href='./message.html'">
+                        <p class="msg-title">区块链监控</p>
+                        <p>超越渗透测试的私钥安全、业务安全等全方位的黑盒加灰盒安全审计</p>
+                    </a>
+                </li>
+                <li class="msg-content">
+                    <span class="iconfont icon-anquan"></span>
+                    <a onclick="window.location.href='./message.html'">
+                        <p class="msg-title">区块链监控</p>
+                        <p>超越渗透测试的私钥安全、业务安全等全方位的黑盒加灰盒安全审计</p>
+                    </a>
+                </li>
+                <li class="msg-content">
+                    <span class="iconfont icon-fangan"></span>
+                    <a onclick="window.location.href='./message.html'">
+                        <p class="msg-title">区块链监控</p>
+                        <p>超越渗透测试的私钥安全、业务安全等全方位的黑盒加灰盒安全审计</p>
+                    </a>
+                </li>
+                <li class="msg-content">
+                    <span class="iconfont icon-zhuye"></span>
+                    <a onclick="window.location.href='./message.html'">
+                        <p class="msg-title">区块链监控</p>
+                        <p>超越渗透测试的私钥安全、业务安全等全方位的黑盒加灰盒安全审计</p>
+                    </a>
+                </li>
+                <li class="msg-content">
+                    <span class="iconfont icon-anquan"></span>
+                    <a onclick="window.location.href='./message.html'">
+                        <p class="msg-title">区块链监控</p>
+                        <p>超越渗透测试的私钥安全、业务安全等全方位的黑盒加灰盒安全审计</p>
+                    </a>
+                </li>
+                <li class="msg-content">
+                    <span class="iconfont icon-dianhua01"></span>
+                    <a onclick="window.location.href='./message.html'">
+                        <p class="msg-title">区块链监控</p>
+                        <p>超越渗透测试的私钥安全、业务安全等全方位的黑盒加灰盒安全审计</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section" id="section2">
+            <div class="swiper-container container">
+                <!-- 用来盛轮播图的盒子 -->
+                <div class="swiper-wrapper">
+                    <!-- 用来盛轮播图图片的盒子 -->
+                    <div class="swiper-slide">
+                        <img src="./images/2.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/1.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/3.jpeg" alt="">
+                    </div>
+                </div>
+                <!-- 轮播图的下一页按钮 -->
+                <div class="swiper-button-next"></div>
+                <!-- 轮播图的上一页按钮 -->
+                <div class="swiper-button-prev"></div>
+                <!-- 轮播图的底下的导航小点点按钮 -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- 新闻板块 -->
+            <!-- <div class="news-nav">
+                <a href="#">公司新闻</a>
+                <a href="#">客户需求</a>
+                <a href="#">技术拓展</a>
+            </div> -->
+            <div class="news-content">
+                <ul class="news-box">
+                    <!-- 新闻简介内容根据接口动态生成 -->
+                </ul>
+                <!-- <ul class="news-box">
+                    <li>
+                        <a class="box-content" href="#" title="">
+                            <img src="./images/money.jpeg" alt="">
+                            <div class="news-write">
+                                <h3>安全策略方案、探讨计划中</h3>
+                                <p>眼下的中国，变化剧烈，选择什么样的新闻，以什么样的眼光，能将过去七天的中国浓缩在一本45分钟的电视新闻杂志里，是我们每天都在不停思索的问题</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="box-content" href="#" title="">
+                            <img src="./images/money.jpeg" alt="">
+                            <div class="news-write">
+                                <h3>安全策略方案、探讨计划中</h3>
+                                <p>眼下的中国，变化剧烈，选择什么样的新闻，以什么样的眼光，能将过去七天的中国浓缩在一本45分钟的电视新闻杂志里，是我们每天都在不停思索的问题</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="box-content" href="#" title="">
+                            <img src="./images/money.jpeg" alt="">
+                            <div class="news-write">
+                                <h3>安全策略方案、探讨计划中</h3>
+                                <p>眼下的中国，变化剧烈，选择什么样的新闻，以什么样的眼光，能将过去七天的中国浓缩在一本45分钟的电视新闻杂志里，是我们每天都在不停思索的问题</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul> -->
+            </div>
+            <!-- <a class="news-more" onclick="window.location.href='./news.html'">查看更多</a> -->
+            <a class="news-more" href="./news.html">查看更多...</a>
+        </div>
+
+        <div class="section" id="section3">
+            <div class="footer-connact">
+                <div class="wx">
+                    <p>请联系我们，带您一同体验区块链世界！！</p>
+                    <img src="./images/WechatIMG374.jpeg" alt="">
+                </div>
+
+                <ul class="footer">
+                    <li>
+                        <h2 class="footer-title">产品</h2>
+                        <ul>
+                            <li>
+                                <a href="#">公司产品</a>
+                            </li>
+                            <li>
+                                <a href="#">公司产品</a>
+                            </li>
+                            <li>
+                                <a href="#">公司产品</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>方案</h2>
+                        <ul>
+                            <li>
+                                <a href="#">解决方案</a>
+                            </li>
+                            <li>
+                                <a href="#">智能定制</a>
+                            </li>
+                            <li>
+                                <a href="#">匹配推荐</a>
+                            </li>
+                            <li>
+                                <a href="#">实时热点</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>用户</h2>
+                        <ul>
+                            <li>
+                                <a href="#">操作指南</a>
+                            </li>
+                            <li>
+                                <a href="#">操作指南</a>
+                            </li>
+                            <li>
+                                <a href="#">操作指南</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>我们</h2>
+                        <ul>
+                            <li>
+                                <a href="#">公司简介</a>
+                            </li>
+                            <li>
+                                <a href="#">公司团队</a>
+                            </li>
+                            <li>
+                                <a href="#">公司前景</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-number">
+                Copyright © 公司名称, Inc. All Rights Reserved.
+                <p>
+                    <span>
+                        <a href="#">备案号</a>
+                        <a href="#">具体编号</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/fullpage.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            // sectionsColor: ['', '', '', '', '#ccddff']设置每一板块的北京颜色,
+            // 导航条对应的每一部分板块，楼层导航
+            anchors: ['homePage', 'servePage', 'productPage', 'dynamicPage', 'aboutPage', 'contactPage',
+                'clientPage'
+            ],
+            navigation: true,
+            // navigationTooltips: ['Page 1', 'Page 2', 'Any text!'],鼠标放到右侧导航上提示点击是第几页
+            showActiveTooltip: true,
+            menu: '#menu'
+        });
+
+        // var text = 'There are' + elements.length + 'members in the elements array';
+        // var text = ['There are', elements.length, 'elements in the elements array'].join('');
+    </script>
+
+    <!-- 给btn按钮绑定点击事件 -->
+    <!-- <script>
+        var myBtn = document.getElementsByClassName('click_btn')[0];
+        myBtn.onclick = function () {
+            window.location.href = "./message.html";
+        }
+    </script> -->
+
+    <!-- 点击屏幕出现爱心 -->
+    <script>
+        (function (window, document, undefined) {
+            var hearts = [];
+            window.requestAnimationFrame = (function () {
+                return window.requestAnimationFrame ||
+                    window.webkitRequestAnimationFrame ||
+                    window.mozRequestAnimationFrame ||
+                    window.oRequestAnimationFrame ||
+                    window.msRequestAnimationFrame ||
+                    function (callback) {
+                        setTimeout(callback, 1000 / 60);
+                    }
+            })();
+            init();
+
+            function init() {
+                css(
+                    ".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: absolute;}.heart:after{top: -5px;}.heart:before{left: -5px;}"
+                );
+                attachEvent();
+                gameloop();
+            }
+
+            function gameloop() {
+                for (var i = 0; i < hearts.length; i++) {
+                    if (hearts[i].alpha <= 0) {
+                        document.body.removeChild(hearts[i].el);
+                        hearts.splice(i, 1);
+                        continue;
+                    }
+                    hearts[i].y--;
+                    hearts[i].scale += 0.004;
+                    hearts[i].alpha -= 0.013;
+                    hearts[i].el.style.cssText = "left:" + hearts[i].x + "px;top:" + hearts[i].y + "px;opacity:" +
+                        hearts[i].alpha + ";transform:scale(" + hearts[i].scale + "," + hearts[i].scale +
+                        ") rotate(45deg);background:" + hearts[i].color;
+                }
+                requestAnimationFrame(gameloop);
+            }
+
+            function attachEvent() {
+                var old = typeof window.onclick === "function" && window.onclick;
+                window.onclick = function (event) {
+                    old && old();
+                    createHeart(event);
+                }
+            }
+
+            function createHeart(event) {
+                var d = document.createElement("div");
+                d.className = "heart";
+                hearts.push({
+                    el: d,
+                    x: event.clientX - 5,
+                    y: event.clientY - 5,
+                    scale: 1,
+                    alpha: 1,
+                    color: randomColor()
+                });
+                document.body.appendChild(d);
+            }
+
+            function css(css) {
+                var style = document.createElement("style");
+                style.type = "text/css";
+                try {
+                    style.appendChild(document.createTextNode(css));
+                } catch (ex) {
+                    style.styleSheet.cssText = css;
+                }
+                document.getElementsByTagName('head')[0].appendChild(style);
+            }
+
+            function randomColor() {
+                return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math
+                    .random() * 255)) + ")";
+            }
+        })(window, document);
+    </script>
+
+    <!-- 新闻数据请求 -->
+    <script src="./js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function (limit, offset, groupIds) {
+            $.ajax({
+                type: "GET",
+                url: "http://172.28.29.13/portal/article/get_article_list",
+                // 请求时需要的参数
+                data: {
+                    limit: 10,
+                    offset: 0,
+                    articleTypeId: 1,
+                },
+                dataType: "json",
+                success: function (data) {
+                    // console.log(data);
+                    var dataList = data.data.list;
+                    // console.log(dataList)
+                    var str = '';
+                    // 输出的i与obj分别为下标与单个的对象
+                    $.each(dataList, function (i, obj) {
+                        // console.log(i);
+                        //console.log(obj.id);
+                        str += '<li class="news-artile">';
+                        str += '<a class="box-content" href="#" title="">';
+                        str += '<img src=' + obj.imageUrl +
+                            ' alt="" >'; // src 是 obj.imageUrl
+                        str += '<div class="news-write">';
+                        str += '<h3 class="con">' + '文章标题：' + obj.title + '</h3>';
+                        str += '<p>' + '文章内容' + obj.articleSynopsis + '</p>'
+                        str += '</div>'
+                        str += '</a>'
+                        str += '</li>';
+                    });
+                    $(".news-box").append(str);
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    const data = JSON.parse(XMLHttpRequest.responseText);
+                    alert(data);
+                }
+            });
+        });
+    </script>
+
+    <!-- 轮播图 -->
+    <script src="./js/swiper-bundle.js"></script>
+    <script>
+        //调用函数
+        var swiper = new Swiper(".container", {
+            //绑定上下页切换按钮
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            //设置自动轮播切换
+            loop: true,
+            autoplay: {
+                delay: 3000
+            },
+            disableOnInteraction: true,
+            //设置图片切换的形式
+            effect: "fade",
+            //添加分页小点点按钮功能
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            }
+        })
+        //鼠标移入时停止自动轮播
+        document.querySelector(".container").onmouseover = function () {
+            swiper.autoplay.stop();
+        }
+        //鼠标移出时开始自动轮播
+        // document.querySelector(".container").onmouseout = function () {
+        //     swiper.autoplay.start();
+        // }
+        //给分页小点点按钮绑定事件
+        // for (var i = 0; i < swiper.pagination.bullets.length; i++) {
+        //     swiper.pagination.bullets[i].onmouseover = function () {
+        //         this.click();
+        //     }
+        // }
+    </script>
+</body>
+
+</html>

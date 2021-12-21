@@ -1,0 +1,79 @@
+{
+  "id": "1714451",
+  "name": "足球圈",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6504121",
+      "name": "菜单",
+      "font_class": "menu-two",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "134843",
+      "name": "31众筹详情-小房子",
+      "font_class": "31zhongchouxiangqingxiaofangzi",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "636216",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "880693",
+      "name": "放大镜",
+      "font_class": "tubiao08",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "1471925",
+      "name": "相机",
+      "font_class": "xiangji",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "3006355",
+      "name": "小房子",
+      "font_class": "shouye-copy",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "11242564",
+      "name": "我 的",
+      "font_class": "wode",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "12974876",
+      "name": "退出",
+      "font_class": "tuichu",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "13294918",
+      "name": "相机",
+      "font_class": "xiangji1",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "13384322",
+      "name": "退出",
+      "font_class": "tuichu1",
+      "unicode": "e785",
+      "unicode_decimal": 59269
+    }
+  ]
+}

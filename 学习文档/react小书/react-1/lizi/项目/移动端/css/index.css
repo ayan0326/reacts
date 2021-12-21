@@ -1,0 +1,150 @@
+@charset "utf-8";
+			.conmid{
+				height: 3.82rem;
+				
+				border-bottom: 10px solid #f6f6f6;
+			}
+			.conmidlt{
+				width: 2.8rem;
+				
+				height: 3.82rem;
+				float: left;
+				border-right: 1px solid #f6f6f6;
+				box-sizing: border-box;
+				padding-top: 0.3rem;
+				padding-left: 0.28rem;
+			}
+			.conmidlt p:first-child{
+				width: 1.86rem;
+				height: 0.4rem;
+				font-size: 0.32rem;
+				color: #FF5E32;
+				margin-bottom: 0.18rem;
+			}
+			.conmidlt p:first-child span{
+				display: inline-block;
+				width: 0.5rem;
+				height: 0.5rem;
+				border-radius: 50%;
+				background: #ff2221;
+			}
+			.conmidlt p:last-of-type{
+				width: 2rem;
+				height: 0.3rem;
+				line-height: 0.3rem;
+				font-size: 0.2rem;
+				color: #FFFFFF;
+				background: #FF2221;
+				margin-bottom: 0.18rem;
+				border-radius: 0.15rem;
+				text-align: center;
+				margin-bottom: 0.5rem;
+			}
+			.conmidrt{
+				width: 4.7rem;
+				
+				height: 3.82rem;
+				float: right;
+				text-align: center;
+			}
+			.conmidrt_top{
+				height: 2.12rem;
+			
+				border-bottom: 1px solid #F6F6F6;
+				padding-left: 0.2rem;
+			}
+			.conmidrt_top div{
+				float: left;
+			}
+			.conmidrt_top p:first-of-type{
+				width: 2rem;
+				height: 0.32rem;
+				font-size: 0.32rem;
+				margin-bottom: 0.1rem;
+				color: #FF5E32;
+			}
+			.conmidrt_top p:nth-of-type(2){
+				width: 1.38rem;
+				height: 0.4rem;
+				font-size: 0.24rem;	
+				line-height: 0.4rem;
+				color: gray;
+				margin-bottom: 0.1rem;
+			}
+			.conmidrt_top p:last-of-type{
+				width: 2rem;
+				height: 0.3rem;
+				line-height: 0.3rem;
+				font-size: 0.2rem;
+				color: #FFFFFF;
+				background: #FF2221;
+				margin-bottom: 0.18rem;
+				border-radius: 0.15rem;
+				text-align: center;
+				margin-bottom: 0.5rem;
+			}
+			.conmidrt_top img{
+				float: right;
+				margin-top: 0.2rem;
+				margin-right: 0.1rem;
+			}
+			.con_fot1{
+				width: 2.3rem;
+				height: 1.68rem;
+				float: left;
+				border-right: 1px solid #F6F6F6;	
+			}
+			.con_fot1 img{
+				margin-left: 0.9rem;
+				margin-top: 0.3rem;
+			}
+			.confot{
+				height: 4rem;
+				
+				padding-top: 0.24rem;
+			}
+			.confot p:first-child{
+				width: 2.56rem;
+				height: 0.5rem;
+				background:#ff732e;
+				color: white;
+				text-align: center;
+				line-height: 0.5rem;
+				font-size: 0.32rem;
+				border-radius:0 0.25rem 0.25rem 0 ;
+				margin-bottom: 0.24rem;
+			}
+			.confot div{
+				height: 2.8rem;
+				
+			}
+			.confot div img{
+				margin-right: 0.24rem;
+				float: left;
+			}
+			.confot div p:first-of-type{
+				height: 0.34rem;
+				margin-top: 0.24rem;
+				float: left;
+				margin-bottom: 0.8rem;
+				font-size: 0.26rem;
+			}
+			.confot div p:nth-of-type(2){
+				width: 4.18rem;
+				height: 0.4rem;
+				line-height: 0.4rem;
+				display: flex;
+				justify-content: space-between;
+				font-size: 0.2rem;
+				color: gray;
+			}
+			
+			.confot div p:nth-of-type(3){
+				width: 4.18rem;
+				height: 0.4rem;
+				line-height: 0.4rem;
+				display: flex;
+				justify-content: space-between;
+				font-size:0.2rem ;
+				color: #FF2221;
+			}

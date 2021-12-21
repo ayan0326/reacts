@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>主页</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+
+        li {
+            list-style: none;
+        }
+
+
+        img {
+            vertical-align: top;
+        }
+
+
+        .wrapBox {
+            width: 1226px;
+            height: 460px;
+            margin: 50px auto;
+            position: relative;
+        }
+
+
+        .wrapBox img {
+            width: 100%;
+        }
+
+
+        .showBox li {
+            display: none;
+        }
+
+
+        .showBox .show {
+            display: block;
+        }
+
+
+        .dotBox {
+            overflow: hidden;
+            position: absolute;
+            right: 50px;
+            bottom: 20px;
+        }
+
+
+        .dotBox li {
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border-radius: 50%;
+            float: left;
+            margin: 0 10px;
+        }
+
+
+        .dotBox .active {
+            background-color: #3399CC;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="wrapBox">
+        <ul class="dotBox">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul class="showBox">
+            <li class="show"><img src="../img/1.jpg" alt=""></li>
+            <li><img src="./../images/1.jpeg" alt=""></li>
+            <li><img src="./../images/2.jpeg" alt=""></li>
+            <li><img src="./../images/3.jpeg" alt=""></li>
+        </ul>
+    </div>
+</body>
+
+
+<script>
+    var dotLi = document.querySelectorAll(".dotBox li");
+    var showLi = document.querySelectorAll(".showBox li");
+
+    var wrapBox = document.querySelector(".wrapBox");
+    console.log(dotLi, showLi, wrapBox);
+
+    // 1、点击按钮切换对应图片
+    for (let i = 0; i < dotLi.length; i++) {
+        var li = dotLi[i];
+        li.onclick = function () {
+            //解决难点问题(当点击时，把i即被点击的按钮下标，赋值给index即可)
+            index = i;
+            // 循环遍历所有的li按钮，并清空颜色类名
+            for (let j = 0; j < dotLi.length; j++) {
+                dotLi[j].className = "";
+                showLi[j].className = "";
+            }
+            // 给点击的按钮，添加颜色类名
+            dotLi[i].className = "active";
+            showLi[i].className = "show";
+        }
+    }
+    // 2、自动轮播，定时器
+    // 图片下标位置，默认为0
+    var index = 0;
+    var timer = null;
+
+    // 页面加载时，调用一次
+    playTime();
+
+    function playTime() {
+        // var timer = setInterval(function () {
+        // timer要改为全局变量
+        timer = setInterval(function () {
+            // 每过两秒，下标加一，跳到下一张
+            index++;
+            // 当图片走完最后一张，也就是下标为4的时候，跳到第一张
+            if (index == 4) {
+                index = 0;
+            }
+            for (let j = 0; j < dotLi.length; j++) {
+                dotLi[j].className = "";
+                showLi[j].className = "";
+            }
+            // 给点击的按钮，添加颜色类名
+            dotLi[index].className = "active";
+            showLi[index].className = "show";
+        }, 2000)
+    }
+
+    // 3、当鼠标移入wrapBox时，停止轮播，清除定时器
+    wrapBox.onmouseenter = function () {
+        clearInterval(timer);
+    }
+
+    // 4、当鼠标移出wrapBox时，继续轮播，重新调用定时器
+    wrapBox.onmouseleave = function () {
+        playTime();
+    }
+</script>
+
+
+</html>

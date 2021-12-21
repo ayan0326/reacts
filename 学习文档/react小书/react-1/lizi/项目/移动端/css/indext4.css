@@ -1,0 +1,159 @@
+@charset "utf-8";
+.header1{
+	height: 2.92rem;
+	background: #ff5c31;
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+}
+.header1 dl{
+	height: 1.12rem;
+
+	margin-top: 1.2rem;
+	display: flex;
+}
+.header1 dt img{
+	width:1.18rem ;
+	height: 1.12rem;
+	margin-left: 0.16rem;
+	margin-right: 0.3rem;
+}
+.header1 dd p:first-child{
+	font-size: 0.24rem;
+	color: white;
+	height: 0.5rem;
+	line-height: 0.5rem;
+}
+.header1 dd p:last-child{
+	width: 4.6rem;
+	height: 0.4rem;
+	background: #fcb35e;
+	border-radius: 0.2rem;
+}
+.header1 dd p:last-child a{
+	display: inline-block;
+	width: 4.5rem;
+	height: 0.34rem;
+	border-radius:0.17rem ;
+	background: #4a4a4a;
+	font-size: 0.24rem;
+	margin:0.03rem  ;
+	color: #FCB35E;
+	text-align: center;
+}
+/*  */
+.content{
+	padding-top: 2.92rem;
+	padding-bottom: 1rem;
+}
+.contop1{
+	height: 1.9rem;
+	width: 100%;
+	background: seagreen;
+	border-bottom: 0.1rem solid #F6F6F6;
+	padding: 0.6rem 0 0.4rem 0;
+	box-sizing: border-box;
+	display: flex;
+}
+.top1box{
+	width:25% ;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.top1box img{
+	width: 0.36rem;
+	height: 0.41rem;
+	margin-bottom:0.24rem ;
+}
+.top1box p{
+	font-size: 0.24rem;
+}
+.conbanner{
+	border-bottom: 0.1rem solid #F6F6F6;
+}
+.conbanner img{
+	width: 100%;
+}
+.conmid{
+	height: 2rem;
+	padding-left: 0.4rem;
+	padding-right: 0.3rem;
+}
+.conmid1{
+	height: 1.3rem;
+
+	border-bottom: 1px solid #F6F6F6;
+}
+.conmid1 .txt{
+	float: left;
+}
+.conmid1 h3{
+	font-size: 0.34rem;
+	font-weight: bold;
+	color: #fa3a4a;
+	margin-top: 0.2rem;
+	margin-bottom: 0.16rem;
+}
+.conmid1 p{
+	color: #e7e7e7;
+}
+.conmid1 img{
+	width: 4.66rem;
+	height: 1.3rem;
+	float: right;
+}
+.conmid2 ul{
+	height: 0.7rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.conmid2 ul li:first-of-type{
+	font-size: 0.22rem;
+	font-weight: bold;
+}
+.conmid2 ul li:nth-of-type(2){
+	font-size: 0.2rem;
+	color: #e5e5e5;
+}
+.conmid2 ul li:nth-of-type(3){
+	font-size: 0.2rem;
+	color: #ef8d88;
+}
+.conmid2 ul li:nth-of-type(4) img{
+	width: 0.48rem;
+	height: 0.41rem;
+}
+.confot{
+	border-top: 0.1rem solid #F6F6F6;
+	height: 3.5rem;
+	padding-left:0.4rem;
+	padding-right: 0.4rem;
+}
+.confot div{
+	height: 33.3%;
+}
+.confot div img{
+	width: 0.37rem;
+	height: 0.4rem;
+	margin-right: 0.24rem;
+	float: left;
+	margin-top: 0.34rem;
+}
+.confot div p:nth-of-type{1}{
+	width: 100%;
+	margin-top: 0.4rem;
+}
+.confot div a{
+	color: black;
+	font-size: 0.26rem;
+	float: left;
+	margin-top: 0.4rem;
+}
+.confot div span{
+	float: right;
+	margin-top: 0.4rem;
+}

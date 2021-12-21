@@ -1,0 +1,25 @@
+{
+	"ret": true,
+    "data": {
+	"categories": [{
+			"price": "1000",
+			"name": "全网有效算力",
+			"imgUrl": "http://localhost:8081/image/lanlan.jpeg"
+		},
+		{
+			"price": "2000",
+			"name": "24h内算力增量",
+			"imgUrl": "http://localhost:8081/image/lanlan.jpeg"
+		},
+		{
+			"price": "3000",
+			"name": "消耗",
+			"imgUrl": "http://localhost:8081/image/lanlan.jpeg"
+		},
+		{
+			"price": "4000",
+			"name": "产量",
+			"imgUrl": "http://localhost:8081/image/lanlan.jpeg"
+		}
+	]}
+}

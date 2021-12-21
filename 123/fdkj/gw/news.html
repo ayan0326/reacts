@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蜂灯科技</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/guanwang.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
+</head>
+
+<body>
+    <!-- 整个新闻板块 -->
+    <div id="news-plate">
+        <div id="news-header">
+            <div class="news-logo">logo</div>
+            <div class="news-btn">
+                <a class="news-back" href="guanwang.html">返回首页</a>
+                <div class="news-language">
+                    <Select className="select" defaultValue="">
+                        <Option value="">语言</Option>
+                        <Option value="1">中文</Option>
+                        <Option value="2">英文</Option>
+                        <Option value="4">日文</Option>
+                    </Select>
+                </div>
+            </div>
+        </div>
+
+        <div id="news-concrete">
+            <div class="swiper-container container">
+                <!-- 用来盛轮播图的盒子 -->
+                <div class="swiper-wrapper">
+                    <!-- 用来盛轮播图图片的盒子 -->
+                    <div class="swiper-slide">
+                        <img src="./images/2.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/1.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/3.jpeg" alt="">
+                    </div>
+                </div>
+                <!-- 轮播图的下一页按钮 -->
+                <div class="swiper-button-next"></div>
+                <!-- 轮播图的上一页按钮 -->
+                <div class="swiper-button-prev"></div>
+                <!-- 轮播图的底下的导航小点点按钮 -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- 新闻板块 -->
+            <!-- <div class="news-nav">
+                <a href="#">公司新闻</a>
+                <a href="#">客户需求</a>
+                <a href="#">技术拓展</a>
+            </div> -->
+            <div class="news-content">
+                <ul class="new-box">
+                    <!-- 新闻简介内容根据接口动态生成 -->
+                </ul>
+            </div>
+
+            <div class="footer-number">
+                Copyright © 公司名称, Inc. All Rights Reserved.
+                <p>
+                    <span>
+                        <a href="#">备案号</a>
+                        <a href="#">具体编号</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 轮播图 -->
+    <script src="./js/swiper-bundle.js"></script>
+    <script>
+        //调用函数
+        var swiper = new Swiper(".container", {
+            //绑定上下页切换按钮
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            //设置自动轮播切换
+            loop: true,
+            autoplay: {
+                delay: 3000
+            },
+            disableOnInteraction: true,
+            //设置图片切换的形式
+            effect: "fade",
+            //添加分页小点点按钮功能
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            }
+        })
+        //鼠标移入时停止自动轮播
+        document.querySelector(".container").onmouseover = function () {
+            swiper.autoplay.stop();
+        }
+    </script>
+
+    <!-- 新闻 -->
+    <script src="./js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function (limit, offset, groupIds) {
+            $.ajax({
+                type: "GET",
+                url: "http://172.28.29.13/portal/article/get_article_list",
+                // 请求时需要的参数
+                data: {
+                    limit: 10,
+                    offset: 0,
+                    articleTypeId: 1,
+                },
+                dataType: "json",
+                success: function (data) {
+                    var nem = data;
+                    // console.log(data);
+                    var dataList = data.data.list;
+                    // console.log(dataList)
+                    var str = '';
+                    // 输出的i与obj分别为下标与单个的对象
+                    $.each(dataList, function (i, obj) {
+                        // console.log(obj);
+                        str += '<li class="news-artile">';
+                        str += '<a class="box-content" href="newsdetails.html?id=' + obj
+                            .id + '"' + ' title="">';
+                        str += '<img src=' + obj.imageUrl +
+                            ' alt="" >'; // src 是 obj.imageUrl
+                        str += '<div class="news-write">';
+                        str += '<h3 class="con">' + '文章标题：' + obj.title + '</h3>';
+                        str += '<p>' + '文章内容' + obj.articleSynopsis + '</p>'
+                        str += '</div>'
+                        str += '</a>'
+                        str += '</li>';
+                    });
+                    $(".new-box").append(str);
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    const data = JSON.parse(XMLHttpRequest.responseText);
+                    alert(data);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

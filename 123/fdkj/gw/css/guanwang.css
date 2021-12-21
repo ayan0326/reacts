@@ -1,0 +1,477 @@
+#section0 {
+    background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
+    background: -webkit-linear-gradient(#4BBFC3, #7BAABE);
+    background: linear-gradient(#ccc, #333333e3);
+}
+/* 重置样式 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration: none !important;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul,li {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+abbr,acronym {
+    border: 0;
+}
+
+/* 每个板块的公共样式 */
+.section{
+	text-align:center;
+}
+
+/* menu导航条 */
+#header {
+    position: fixed;
+    top: 1.25rem;
+    width: 100%;
+    height: 3.75rem;
+    z-index: 99999;
+}
+
+.logo {
+    float: left;
+    width: 9.25rem;
+    text-align: center;
+    font-size: 40px;
+}
+
+.menus {
+    float: right;
+    margin-right: 8.125rem;
+}
+
+.menus li {
+    display: inline-block;
+    margin: 0 .9375rem;
+    /* -webkit-border-radius: 10px;
+    border-radius: 10px; */
+}
+
+/* 导航条鼠标划过样式 */
+.menus li:hover {
+    border-bottom: 1px solid #333;
+    color: #000;
+}
+
+.menus a {
+    color: #000;
+    padding: .375rem;
+    display: block;
+    border-bottom: 1px solid transparent;
+    position: relative;
+}
+
+.language {
+    position: absolute;
+    right: 3.125rem;
+    top: .5rem;
+}
+
+/* 第一部分 */
+#content {
+    width: 100%;
+}
+
+#section0 #content h2 {
+    margin: 1.5rem 0;
+}
+
+#section0 #content h4 {
+    margin-bottom: 1.5rem;
+}
+
+.content p {
+    font-size: 40px;
+    color: #fff;
+}
+
+.area-box {
+    font-size: 2em;
+    font-family: arial, helvetica;
+    color: #fff;
+    margin: 0 .5125rem;
+    padding: 0;
+}
+
+.animate {
+    animation-duration: 1s;
+    animation-fill-mode: both
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+.delayone {
+    animation-delay: .3s;
+}
+
+.delaytwo {
+    animation-delay: .5s;
+}
+
+.glyphicon-menu-down {
+    position: fixed;
+    z-index: 99999;
+    left: 50%;
+    bottom: 30px;
+    width: 34px;
+    height: 34px;
+    margin-left: -17px;
+    background: url(../images/icon-arrow.png) no-repeat 50% 50%;
+    background-size: 20px auto;
+    -webkit-animation: arrowdou .5s infinite linear;
+    -moz-animation: arrowdou .5s infinite linear;
+    -o-animation: arrowdou .5s infinite linear;
+    animation: arrowdou .5s infinite linear;
+}
+
+/* 第二部分 */
+#section1 {
+    /* background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
+    background: -webkit-linear-gradient(#4BBFC3, #7BAABE); */
+    /* background: linear-gradient(hsl(41, 30%, 76%)); */
+    background: rgb(226, 225, 225);
+}
+
+#section1 .title {
+    margin-bottom: 35px;
+    font-size: 30px;
+    font-size: 300;
+}
+
+.content-box {
+    display: flex;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.msg-content {
+    display: flex;
+    width: 20%;
+    font-size: 15px;
+    border-radius: 8px;
+    margin: 1% 1%;
+    background: #fff;
+}
+
+.msg-content span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.icon-dianhua01 {
+    font-size: 45px !important;
+    padding: 1rem;
+}
+
+.icon-anquan {
+    font-size: 45px !important;
+    padding: 1rem;
+}
+
+.icon-fangan {
+    font-size: 45px !important;
+    padding: 1rem;
+}
+
+.icon-zhuye {
+    font-size: 45px !important;
+    padding: 1rem;
+}
+
+.msg-title {
+    font-size: 26px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.content-box p {
+    margin: 1.25rem 0;
+    font-size: 12px;
+    color: #000;
+}
+
+/* 第三部分 */
+.news-nav  {
+    margin: 1.25rem auto;
+    text-align: center;
+}
+
+.news-nav a {
+    color: #333;
+}
+
+.news-box li {
+    padding: 1rem .625rem 0 .625rem;
+}
+.news-content {
+    width: 70%;
+    min-height: 18.75rem;
+    margin: 1.875rem auto;
+}
+
+.box-content {
+    display: flex;
+    align-items: center;
+}
+
+.news-write {
+    padding: 0 2.25rem;
+    text-align: left;
+}
+
+.news-write h3 {
+    font-size: 16px !important;
+}
+
+.news-write p {
+    color: rgb(99, 96, 96);
+}
+
+.box-content img {
+    width: 8.125rem;
+    height: 6.25rem;
+}
+
+.news-more {
+    display: inline-block;
+    padding: .875rem 3.125rem;
+    margin: 1.25rem auto 0;
+    text-align: center;
+    border: 1px solid #ccc;
+    color: rgb(87, 84, 84);
+}
+
+/* 新闻轮播图 */
+.container{
+    width: 70%;
+    height: 200px;
+    /* margin-top: 4.125rem; */
+    margin-top: -4.125rem;
+}
+.swiper-slide img{
+    width: 590px;
+    height: 470px;
+}
+
+.swiper-wrapper img {
+    width: 100%;
+}
+
+.news-box {
+    height: 25rem;
+    overflow: hidden;
+}
+
+.news-artile {
+    margin-bottom: 1rem;
+}
+
+.news-artile .con {
+    margin-bottom: .625rem;
+}
+
+/* 新闻详情页 */
+.news-concrete {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.new-nav {
+    background-color: pink;
+    text-align: center;
+}
+
+/* 整个新闻板块页面样式 */
+#news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.625rem;
+    margin-bottom: 6.125rem;
+}
+
+#news-header .news-logo {
+    font-size: 36px;
+}
+
+.news-btn {
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news-back {
+    font-size: 14px;
+    color: rgb(87, 83, 83);
+}
+
+/* 第四部分 */
+#section3 {
+    background: #eee6f1;
+}
+
+.footer-connact {
+    display: flex;
+    padding: .625rem;
+}
+
+.footer-connact .wx {
+    width: 26.75rem;
+    height: 26.75rem;
+    margin: 1px 6.25rem 0 8rem;
+}
+
+.wx p {
+    font-size: 14px;
+    margin-bottom: 2.25rem;
+}
+
+.wx img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    display: flex;
+    margin-left: 10%;
+}
+
+.footer li {
+    margin: 1.625rem 2.25rem;
+}
+
+.footer-number {
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+/* 圣诞老人动画 */
+@-webkit-keyframes animate-positive {
+    0% {
+        width: 0%;
+    }
+}
+
+@keyframes animate-positive {
+    0% {
+        width: 0%;
+    }
+}
+
+@-webkit-keyframes statetop {
+    0% {
+        background-position: 0% 0%;
+
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+@-moz-keyframes statetop {
+    0% {
+        background-position: 0% 0%;
+
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+@-o-keyframes statetop {
+    0% {
+        background-position: 0% 0%;
+
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+@keyframes statetop {
+    0% {
+        background-position: 0% 0%;
+
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+.boxA {
+    position: absolute;
+    bottom: 15%;
+    left: 38%;
+    width: 28.75rem;
+    /*宽高尺寸任意增减*/
+    height: 100px;
+    background: url(../images//jlt.jpeg) no-repeat;
+    background-size: 400% 100%;
+    /*这项是关键，用来撑开拼凑起来的序列帧，一行4帧图就是400%*/
+    -webkit-animation: bird-slow .5s steps(3) infinite;
+    /*发生了3次位移steps就是3*/
+    animation: bird-slow .5s steps(3) infinite;
+}
+
+@keyframes bird-slow {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 99% 0%;
+        /*整张图是100%，3次位移每一次是33%，第三次就是99%*/
+    }
+}
+
+@-webkit-keyframes bird-slow {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 99% 0%;
+    }
+}

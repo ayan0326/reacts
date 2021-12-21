@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newsdetails</title>
+</head>
+
+<body>
+    <div class="news-box">
+        <!-- 动态生成的content富文本编辑的内容 -->
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <!-- 时间戳转换 -->
+    <script src="https://unpkg.com/dayjs"></script>
+    <script type="text/javascript">
+        function GetRequest() {
+            var url = location.search; //获取url中"?"符后的字串
+            var theRequest = new Object();
+
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&");
+
+                for (var i = 0; i < strs.length; i++) {
+                    theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+                }
+            }
+            return theRequest;
+        }
+        // Request是一个id的对象
+        var Request = new Object();
+        Request = GetRequest();
+        // console.log(Request);
+
+
+        $(function (id) {
+            // 拿到url里的参数id，传给新的数据请求
+            var id = Request["id"];
+            // console.log(id);
+            $.ajax({
+                type: "GET",
+                url: "http://172.28.29.13/portal/article/get_article_info",
+                // 请求时需要的参数
+                data: {
+                    id
+                },
+                dataType: "json",
+                success: function (a) {
+                    console.log(a);
+                    console.log(a.data);
+                    var data = a.data;
+                    var str = '';
+                    str += '<h1>' + '标题' + data.title + '</h1>'
+                    str += '<span>' + '作者' + data.author + '</span>'
+                    str += '<span>' + '更新时间：' +  dayjs(data.updatedAt).format('DD MM YYYY') + '</span>'
+                    str += '<p>' + '简介' + data.articleSynopsis + ' </p>'
+                    str += '<img src=' + data.imageUrl +
+                        ' alt="" >'; // src 是 obj.imageUrl
+                    str += '<p>' + '具体内容' + data.content + ' </p>'
+                    $(".news-box").append(str);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

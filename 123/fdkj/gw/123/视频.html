@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>蜂灯科技</title>
+    <meta name="author" content="Matthew Howell" />
+    <meta name="description" content="fullPage continuous scrolling demo." />
+    <meta name="keywords" content="fullpage,jquery,demo,scroll,loop,continuous" />
+    <meta name="Resource-type" content="Document" />
+
+    <link href="https://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="./css/guanwang.css" />
+    <link rel="stylesheet" href="./css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
+    <Link rel="stylesheet" href="./css/animate.css" />
+
+    <!-- IE浏览器兼容写法 -->
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 菜单栏对应每一个展示板块 -->
+    <div id="header">
+        <!-- <div class="logo">蜂灯科技</div> -->
+        <ul class="menus">
+            <li data-menuanchor="homePage" class="active"><a href="#homePage">首页</a></li>
+            <li data-menuanchor="productPage"><a href="#productPage">产品</a></li>
+            <li data-menuanchor="resolvePage"><a href="#resolvePage">解决方案</a></li>
+            <li data-menuanchor="dynamicPage"><a href="#dynamicPage">动态</a></li>
+            <li data-menuanchor="aboutPage"><a href="#aboutPage">关于</a></li>
+        </ul>
+    </div>
+
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <h1 class="logo">蜂灯科技</h1>
+            <div id="content">
+                <p>For Every Block</p>
+                <h1>为了每个区块</h1>
+            </div>
+            <video class="video-content" src="./images/_Cyberpunk24.mp4" muted loop autoplay
+                style="height: 100%; display: block;"></video>
+        </div>
+
+        <div class="section" id="section1">
+            <!-- <img class="bgk-picture" src="./images/productbgk.jpg" alt=""> -->
+            <h1 class="state-title">产品</h1>
+            <div class="product-box">
+                <div class="resolve-workbench">
+                    <ul>
+                        <li>Filenest</li>
+                        <li>更简单更高效的矿工工作台</li>
+                        <li>集群状态一目了然</li>
+                        <li>异常情况实时提醒</li>
+                        <li>多账户管理安全可靠</li>
+                        <li>后台数据SHA加密</li>
+                    </ul>
+                    <img src="./images/fil.jpg" alt="">
+                </div>
+                <!-- <div class="resolve-browser">
+                    <p class="browser-title">FileCoin区块链浏览器——Fileye</p>
+                    <p>全区块链数据一站打尽，海量数据毫秒网络反应，重点数据可视图表呈现</p>
+
+                </div> -->
+            </div>
+        </div>
+
+        <div class="section" id="section2">
+            <div class="resolve-title">
+                <i class="tit-left"></i>
+                <h3>解决方案</h3>
+                <i class="tit-right"></i>
+            </div>
+            <div class="resolve-box">
+                <div class="file-resolve">
+                    <span class="file-title">FileCoin</span><span class=filenest-annotation>的优势</span>
+                    <div class="file-advantage">
+                        <img src="./images/file.jpg" alt="">
+                        <ul class="file-every">
+                            <li class="first-li">全局网络与安全架构设计</li>
+                            <li>软硬件双重保证系统安全稳定</li>
+                            <li>按需定制硬件方案 灵活配比规划投资</li>
+                            <li>全局智能调度算法 完美发挥机器性能</li>
+                            <li>支持worker横向扩容 自由控制封装速度</li>
+                            <li>多种存储解决方案 保证可靠提高可用</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="wisdom-resolve">
+                    <p class="wisdom-title">智算中心</p>
+
+                    <div class="experience-case">
+                        <div class="case1">
+                            <h3>浪潮</h3>
+                            <img src="./images/langchao.png" alt="">
+                            <p>以融合架构计算系统为平台，以数据为资源，能够以强大算力驱动AI模型对数据进行深度加工， 源源不断产生各种智慧计算服务，并通过网络以云服务形式，向组织及个人进行供应。</p>
+                        </div>
+                        <div class="case2">
+                            <h3>新华三</h3>
+                            <img src="./images/langchao.png" alt="">
+                            <p>数字化解决方案领导者，致力于成为客户业务创新、数字化转型最可信赖的合作伙伴</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section3">
+            <!-- 新闻板块 -->
+            <h1 class="state-title">蜂灯动态</h1>
+            <div class="news-content">
+                <div class="content-part">
+                    <p class="content-title">
+                        <span>公司快讯</span>
+                        <img src="./images/newsico.png" alt="">
+                    </p>
+                    <ul class="news-box">
+                        <!-- 新闻简介内容根据接口动态生成 -公司快讯-->
+                    </ul>
+                    <a class="news-more" href="./news.html">查看更多 ></a>
+                </div>
+                <!-- <a class="news-more" onclick="window.location.href='./news.html'">查看更多</a> -->
+                <div class="content-part">
+                    <p class="content-title">
+                        <span>行业新闻</span>
+                        <img src="./images/newsico.png" alt="">
+                    </p>
+                    <ul class="news-box">
+                        <!-- 行业新闻 -->
+                    </ul>
+                    <a class="news-more" href="./news.html">查看更多 ></a>
+                </div>
+            </div>
+            <div class="space"> </div>
+        </div>
+
+        <div class="section" id="section4">
+            <div class="about-box">
+                <h1 class="about-title">关于我们</h1>
+                <div class="content-box">
+                    <p class="about-content">
+                        <span class="normal">上海蜂灯科技有限公司</span>成立于2020年10月，由来自国内互联网大厂的热爱去中心化精神的极客们共同建立。
+                    </p>
+                    <p class="form-content">
+                        蜂灯科技通过WEB3.0重要的组成部分、国际知名区块链项目——FileCoin入局欣欣向荣的区块链赛道。结合团队丰富的IDC机房设计经验、算法研发、分布式存储开发经验，团队已经服务了多个FileCoin矿工。同时，蜂灯科技成功研发Fileye区块链浏览器，Filnest矿工工作台等产品，帮助FileCoin矿工们最轻便的管理FileCoin集群。蜂灯科技将继续瞄准WEB3.0与区块链之间的机会，推出更多生态产品，迎接新的互联网革命！
+                    </p>
+                </div>
+            </div>
+            <div class="about-footer">
+                <a class="picture-copyright" href="https://www.freepik.com/photos/business">Business photo created by
+                    pressfoto - www.freepik.com</a>
+                <p class="contact"><span>联系方式</span><span>电话 12345678900</span><span>邮箱 123456@qq.com</span></p>
+                <p class="copy">
+                    Copyright © 公司名称, Inc. All Rights Reserved.
+                    <span>
+                        <a href="#">备案号</a>
+                        <a href="#">具体编号</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/fullpage.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            // sectionsColor: ['', '', '', '', '#ccddff']设置每一板块的北京颜色,
+            // 导航条对应的每一部分板块，楼层导航
+            anchors: ['homePage', 'productPage', 'resolvePage', 'dynamicPage', 'aboutPage'],
+            navigation: true,
+            // navigationTooltips: ['Page 1', 'Page 2', 'Any text!'],鼠标放到右侧导航上提示点击是第几页
+            showActiveTooltip: true,
+            menu: '#menu'
+        });
+
+        // var text = 'There are' + elements.length + 'members in the elements array';
+        // var text = ['There are', elements.length, 'elements in the elements array'].join('');
+    </script>
+
+    <!-- 给btn按钮绑定点击事件 -->
+    <!-- <script>
+        var myBtn = document.getElementsByClassName('click_btn')[0];
+        myBtn.onclick = function () {
+            window.location.href = "./message.html";
+        }
+    </script> -->
+
+    <!-- 新闻数据请求 -->
+    <script src="./js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function (limit, offset, groupIds) {
+            $.ajax({
+                type: "GET",
+                // 绝对路径
+                url: "http://172.28.29.13:8080/portal/article/get_article_list",
+                // 相对路径
+                // url: "article/get_article_list",
+                // 请求时需要的参数
+                data: {
+                    limit: 10,
+                    offset: 0,
+                    articleTypeId: 1,
+                },
+                dataType: "json",
+                success: function (data) {
+                    var dataList = data.data.list;
+                    var str = '';
+                    // 输出的i与obj分别为下标与单个的对象
+                    $.each(dataList, function (i, obj) {
+                        //console.log(obj);
+                        str += '<li class="news-artile">';
+                        // 点击跳转新闻详情时传id
+                        str += '<a class="box-content" href="newsdetails.html?id=' + obj
+                            .id + '"' + ' title="">';
+                        str += '<img src=' + ' http://172.28.29.13/images/group1/portal/' +
+                            obj.imageUrl +
+                            ' alt="" >'; // src 是 obj.imageUrl
+                        str += '<div class="news-write">';
+                        str += '<h3 class="con">' + obj.title + '</h3>';
+                        str += '<p>' + obj.articleSynopsis + '</p>'
+                        str += '</div>'
+                        str += '</a>'
+                        str += '</li>';
+                    });
+                    $(".news-box").append(str);
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    const data = JSON.parse(XMLHttpRequest.responseText);
+                    alert(data);
+                }
+            });
+        });
+    </script>
+
+    <!-- 轮播图 -->
+    <script src="./js/swiper-bundle.js"></script>
+    <script>
+        var mySwiper = new Swiper(".swiper-container", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOninteraction: true,
+            },
+            effect: "fade",
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            }
+        })
+        // 鼠标移入移出
+        mySwiper.el.onmouseover = function () {
+            mySwiper.autoplay.stop();
+        }
+        mySwiper.el.onmouseleave = function () {
+            mySwiper.autoplay.start();
+        }
+
+        for (var i = 0; i < mySwiper.pagination.bullets.length; i++) {
+            mySwiper.pagination.bullets[i].onmouseover = function () {
+                this.click();
+            }
+        }
+    </script>
+
+    <!-- 视频播放 -->
+    <script>
+        var videoList = $('video');
+        var wHeigt = window.innerHeight;
+        for (var i = 0; i < videoList.length; i++) {
+            var v = videoList[i];
+            v.height = $(v).height();
+            v.top = $(v).offset().top;
+        }
+        //sTop加50，是考虑页头的高度，遮档了内容的可视区，这点大家灵活处理
+        $(document).on('scroll.blogDetail', function () {
+            var sTop = $(document).scrollTop();
+            var hasPlay = false;
+            for (var i = 0; i < videoList.length; i++) {
+                var v = videoList[i];
+                if (!hasPlay && v.top > (sTop + 50) && (wHeigt + sTop) > (v.top + v.height)) {
+                    v.play();
+                } else {
+                    v.pause();
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
